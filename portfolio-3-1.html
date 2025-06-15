@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>읽은 책: 천개의 파랑</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .book-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .book-header img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .book-header .book-info {
+      font-size: 1rem;
+      color: #3d2c1e;
+    }
+
+    .book-info h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .book-box {
+      background-color: #fffaf0;
+      border-top: 2px solid #e3ba63;
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 2rem;
+      width: 100%;
+      box-shadow: inset 0 1px 5px rgba(0,0,0,0.05);
+      max-width: 1200px;
+    }
+
+    .jul {
+      font-family: 'Gyeonggi_Batang_Regular', "Open Sans", sans-serif;
+      color: #444;
+      font-size: small;
+    }
+
+    .reading-period {
+      display: flex;               
+      gap: 1rem;                   
+      font-size: 0.95rem;
+      color: #222;
+    }
+
+    .reading-period .block {
+      display: flex;
+      flex-direction: column;      /* 안의 label과 value는 세로 배치 */
+    }
+
+    .reading-period .label {
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+    }
+
+    .reading-period .value {
+      font-family: 'Gyeonggi_Batang_Regular', 'Open Sans', sans-serif;
+      padding: 0.6rem 1rem;
+      border: 1px solid #eaaf42;
+      border-radius: 8px;
+      background-color: #fff;
+      width: fit-content;
+      color: #333;
+    }
+
+    .font_center {text-align: center;}
+    .font_big {font-size: 150%;}
+    .font_bold {font-weight: bold;}
+
+    .button {
+      width: 30%;
+      height: 150%;
+
+      background-color: #59371b;
+      border: 5px solid #E3BA63;
+      border-radius: 30px;
+    }
+
+    .button > a{
+      display: block;
+      line-height: 200%;
+      color: #E3BA63;
+      text-decoration: none;
+    }
+
+    .input-block {
+      margin-bottom: 1.5rem;
+    }
+
+    .input-block label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #3d2c1e;
+    }
+
+    .input-block input,
+    .input-block textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.6rem 1rem;
+      border: 1px solid #e3ba63;
+      border-radius: 8px;
+      background-color: #fff;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .confirm-button {
+      background-color: #59371b;
+      border: 3px solid #e3ba63;
+      border-radius: 20px;
+      padding: 0.7rem 2rem;
+      color: #fffaf0;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .confirm-button:hover {
+      background-color: #7a4b29;
+    }
+
+  </style>
+
+  <script>
+  function showConfirmation() {
+    alert("수정이 완료되었습니다!");
+    window.location.href = "portfolio-4.html";
+  }
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Moderna
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Updated: May 7 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>읽어야 산다</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="index.html">홈 화면</a></li>
+          <li><a href="services.html">가이드/자주 묻는 질문</a></li>
+          <li><a href="portfolio.html">행운의 책 보러가기</a></li>
+          <li class="dropdown"><a href="#"><span>마이 페이지</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="blog-single.html">내 정보</a></li>
+              <li class="dropdown"><a href="#"><span>히스토리</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="portfolio-4.html">내가 읽고 있는 책</a></li>
+                  <li><a href="history/bookhistory.html">내가 남긴 행운의 코멘트</a></li>
+                </ul>
+            </ul>
+          </li>
+          <li><a href="contact.html">사업자 문의</a></li>
+          <a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section class="book-header">
+      <img src="assets/img/thousandparang.jpg" alt="천 개의 파랑 책 표지">
+      <div class="book-info">
+        <h2>천 개의 파랑</h2>
+        <p>저자: 천선란</p>
+      </div>
+    </section>
+
+    <section class="book-box">
+      <!-- 상태 전환 버튼 -->
+      <div style="display: flex; gap: 1rem; justify-content: left; margin-bottom: 1.5rem;">
+        <button style="
+          padding: 0.6rem 1.5rem;
+          border: 2px solid #e3ba63;
+          background-color: #fff;
+          border-radius: 10px;
+          font-weight: bold;
+          cursor: pointer;
+        ">
+
+          <a href="portfolio-3.html" style="color: #3d2c1e;">읽은 책</a><br><a class="jul" href="portfolio-3.html">다 읽었어요!</a>
+        </button>
+        <button style="
+          padding: 0.6rem 1.5rem;
+          border: 2px solid #e3ba63;
+          background-color: #fff;
+          border-radius: 10px;
+          font-weight: bold;
+          cursor: pointer;
+        ">
+          <a href="portfolio-3-1.html" style="color: #3d2c1e;">읽고 있는 책</a><br><a class="jul" href="portfolio-3-1.html">열심히 읽고 있어요</a>
+        </button>
+      </div>
+      <div class="label">📘 독서 기간</div><br>
+      <div class="input-block">
+        <label for="start-date">시작일</label>
+        <input type="date" id="start-date" name="start-date">
+      </div>
+
+      <div class="input-block">
+        <label for="reading-amount">현재까지 읽은 분량 (ex. 150페이지 / 2장 / 45%)</label>
+        <input type="text" id="reading-amount" name="reading-amount" placeholder="예: 132페이지">
+      </div>
+
+  <button class="confirm-button" onclick="showConfirmation()"><a href="portfolio-4.html">수정 완료</a></button>
+
+    </section>
+    <br>
+    <br>
+
+  </main><!-- End #main -->
+
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>읽어야 산다</h4>
+            <p>독서하자. 먼저 지치는 쪽은 거북북이가 되기로.</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>기능 바로 가기</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈 화면</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio.html">행운의 책</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio-4.html">읽고있는 책</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">사용 가이드</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>제휴 회사</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.millie.co.kr/v3/intro?utm_source=google&utm_medium=pmax&utm_campaign=subs&utm_content=millie_ongoing&utm_term=250609_pmax_asset_1&gad_source=1&gad_campaignid=22519028367&gbraid=0AAAAAC-SaZdo6gJsGz-iM-WIF9wJt__cs&gclid=Cj0KCQjwmK_CBhCEARIsAMKwcD47rlIqTA9qQQ_so9IIFjtBvs0m1i-FVBQ0u1Mzifx-MTf-x2d2VYcaAsvNEALw_wcB">밀리의 서재</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.aladin.co.kr/home/welcome.aspx?srsltid=AfmBOookNdixkIe8PJgm-kyrML6Y5Qk7I3GTppTU2chkE-hHkeQeIGgl">알라딘</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.yes24.com/Main/default.aspx">yes24</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://product.kyobobook.co.kr/detail/S000001913217">교보문고</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>사업자 문의</h4>
+            <p>
+              중앙대학교 다빈치 캠퍼스 <br>
+              예술공학대학, 예술공학부<br>
+              대한민국 <br><br>
+              <strong>휴대전화:</strong> 82+ 031-670-3282<br>
+              <strong>이메일:</strong> ssb0765@cau.ac.kr<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>거북북이를 소개합니다</h3>
+            <p>느리지만 오래 읽는 게 목표인 거북북이! 책껍질을 이고 오늘도 당신의 독서 습관을 응원해요 : > </p>
+            <div class="social-links mt-3">
+              <a href="https://www.instagram.com/soup_in_song/" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.instagram.com/okmintty/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/uzuniyo/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.instagram.com/cnoblues/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

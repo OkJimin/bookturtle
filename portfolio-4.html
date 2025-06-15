@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>읽고있는 책: 읽어야 산다</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .font_center { text-align: center; }
+    .font_big { font-size: 150%; }
+    .font_bold { font-weight: bold; }
+
+    .button {
+      width: 40%;
+      height: 200%;
+      background-color: #59371b;
+      border: 5px solid #E3BA63;
+      border-radius: 30px;
+    }
+
+    .button > a {
+      display: block;
+      line-height: 300%;
+      color: #E3BA63;
+      text-decoration: none;
+    }
+
+    @media (max-width: 850px) {
+      main {
+        padding: 2em 1.2em !important;
+      }
+
+      /* 중앙 콘텐츠 세로 정렬 */
+      section[style*="display: flex"] {
+        flex-direction: column !important;
+        gap: 1.5em !important;
+        align-items: flex-start !important;
+      }
+
+      section img {
+        max-width: 100% !important;
+        height: auto !important;
+        border-radius: 10px;
+      }
+
+      section h2 {
+        font-size: 1.5em !important;
+        margin-top: 0.5em;
+      }
+
+      section p {
+        font-size: 1em !important;
+        line-height: 1.7 !important;
+      }
+
+      section label {
+        display: block;
+        font-size: 1em !important;
+        margin-top: 1.5em;
+      }
+
+      section div[style*="background-color: #eee"] {
+        height: 14px !important;
+        border-radius: 7px !important;
+      }
+
+      section div[style*="background-color: #57371D"] {
+        border-radius: 7px !important;
+      }
+
+      section div[style*="text-align: right"] {
+        font-size: 0.9em !important;
+      }
+
+      section button {
+        width: 100% !important;
+        padding: 10px;
+        font-size: 1em;
+        margin-top: 1em;
+      }
+
+      section button a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+      }
+
+      section[style*="justify-content: center"] {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+
+      section div[style*="background-color: #f5f5f5"] {
+        font-size: 1em !important;
+        max-width: 100% !important;
+        padding: 1em !important;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+
+      section div[style*="background-color: #f5f5f5"]::after {
+        display: none !important;
+      }
+
+      section img[src*="turtle"] {
+        height: 120px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>읽어야 산다</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="index.html">홈 화면</a></li>
+          <li><a href="services.html">가이드/자주 묻는 질문</a></li>
+          <li><a href="portfolio.html">행운의 책 보러가기</a></li>
+          <li class="dropdown"><a href="#"><span>마이 페이지</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="blog-single.html">내 정보</a></li>
+              <li class="dropdown"><a href="#"><span>히스토리</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="portfolio-4.html">내가 읽고 있는 책</a></li>
+                  <li><a href="history/bookhistory.html">내가 남긴 행운의 코멘트</a></li>
+                </ul>
+            </ul>
+          </li>
+          <li><a href="contact.html">사업자 문의</a></li>
+          <a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+          <ol>
+            <li><a href="index.html">홈 화면</a></li>
+            <li>행운의 책</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- 전체 콘텐츠 감싸기 -->
+    <main style="max-width: 95%; margin: 0 auto; padding: 2em 14em;">
+
+    <!-- 중앙 콘텐츠 영역 -->
+    <section style="display: flex; gap: 3em; align-items: flex-start;">
+
+        <!-- 왼쪽: 책 이미지 -->
+        <div style="flex: 0 0 280px;">
+        <img src="assets/img/thousandparang.jpg" alt="책 이미지" style="width: 100%; border-radius: 10px;" />
+        </div>
+
+        <!-- 오른쪽: 책 정보 -->
+        <div style="flex: 1; font-size: 1.1em;">
+        <h2 style="margin-top: 0; font-size: 1.6em;">천개의 파랑</h2>
+        <p style="margin: 0.4em 0; font-size: 1em;"><strong>작가:</strong> 천선란</p>
+        <p style="margin-top: 1em; line-height: 1.8;">
+            인지와 학습 능력을 가진 기수 휴머노이드 콜리는 경마에서 최고의 속도로 달리기 위해 고통스러워하는 투데이를 위해 낙마한다. 이후 연골이 닳아진게 알려진 투데이는 안락사를 맞을 준비를 하고 경마를 방해한 콜리는 폐기처분될 위기에 처한다. 그러나 콜리는 로봇에 관심이 많은 연재가 가져가 그를 수리하고, 이후 그는 연재네와 함께 살게 된다. 연재는 같은 고등학교 친구인 지수에 이끌려 같이 프로젝트를 하게 됐는데, 연재가 그녀를 밀어냄에도 지수는 계속해서 살갑게 지낸다. 한편, 말에 관심이 많은 은햬는 복희와 서진과 대화를 나누면서 앞으로 안락사를 당할 투데이에게 관심을 보인다. 이후 투데이를 살리고 싶은 은혜와 콜리는 '가장 느리게 달리는 말'을 위한 계획을 세우는데...
+        </p>
+
+        <!-- 게이지 바 + 페이지 수 -->
+        <div style="margin-top: 2em;">
+            <label style="font-size: 1em;">📖 독서 진행률: 37%</label>
+            <div style="background-color: #eee; height: 18px; border-radius: 9px; margin-top: 8px; width: 100%;">
+            <div style="width: 37%; height: 100%; background-color: #57371D; border-radius: 9px;"></div>
+            </div>
+            <div style="text-align: right; font-size: 0.9em; color: #666; margin-top: 4px;">
+            121/373쪽
+            </div>
+            <div style="text-align: right; margin-top: 8px;">
+            <button style="
+                padding: 8px 16px;
+                font-size: 0.95em;
+                background-color: #57371D;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                border-radius: 10px;
+                cursor: pointer;">
+                <a href="portfolio-3-1.html">독서 진행률 수정하기</a>
+            </button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 캐릭터 + 말풍선 영역 -->
+    <section style="display: flex; justify-content: center; align-items: center; padding: 3em 0 0 0; gap: 2em;">
+        <div style="
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        padding: 1.5em 2em;
+        font-size: 1.2em;
+        color: #333;
+        position: relative;
+        max-width: 420px;
+        line-height: 1.6;">
+        영차영차. 열심히 책을 읽고 있어요!
+        <div style="
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -14px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 14px solid transparent;
+            border-bottom: 14px solid transparent;
+            border-left: 14px solid #f5f5f5;">
+        </div>
+        </div>
+        <div style="flex-shrink: 0;">
+        <img src="assets/img/turtle.png" alt="캐릭터" style="height: 160px;" />
+        </div>
+    </section>
+
+    </main>
+
+  </main><!-- End #main -->
+
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>읽어야 산다</h4>
+            <p>독서하자. 먼저 지치는 쪽은 거북북이가 되기로.</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>기능 바로 가기</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈 화면</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio.html">행운의 책</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio-4.html">읽고있는 책</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">사용 가이드</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>제휴 회사</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.millie.co.kr/v3/intro?utm_source=google&utm_medium=pmax&utm_campaign=subs&utm_content=millie_ongoing&utm_term=250609_pmax_asset_1&gad_source=1&gad_campaignid=22519028367&gbraid=0AAAAAC-SaZdo6gJsGz-iM-WIF9wJt__cs&gclid=Cj0KCQjwmK_CBhCEARIsAMKwcD47rlIqTA9qQQ_so9IIFjtBvs0m1i-FVBQ0u1Mzifx-MTf-x2d2VYcaAsvNEALw_wcB">밀리의 서재</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.aladin.co.kr/home/welcome.aspx?srsltid=AfmBOookNdixkIe8PJgm-kyrML6Y5Qk7I3GTppTU2chkE-hHkeQeIGgl">알라딘</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.yes24.com/Main/default.aspx">yes24</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://product.kyobobook.co.kr/detail/S000001913217">교보문고</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>사업자 문의</h4>
+            <p>
+              중앙대학교 다빈치 캠퍼스 <br>
+              예술공학대학, 예술공학부<br>
+              대한민국 <br><br>
+              <strong>휴대전화:</strong> 82+ 031-670-3282<br>
+              <strong>이메일:</strong> ssb0765@cau.ac.kr<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>거북북이를 소개합니다</h3>
+            <p>느리지만 오래 읽는 게 목표인 거북북이! 책껍질을 이고 오늘도 당신의 독서 습관을 응원해요 : > </p>
+            <div class="social-links mt-3">
+              <a href="https://www.instagram.com/soup_in_song/" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.instagram.com/okmintty/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/uzuniyo/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.instagram.com/cnoblues/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
