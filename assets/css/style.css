@@ -89,7 +89,7 @@ h6,
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #57371D;
+  background: #341f0d;
 }
 
 #header.header-transparent {
@@ -2325,7 +2325,7 @@ section {
 /* 버튼 (질문 부분) */
 .accordion-button {
   background-color: #E3BA63;
-  color: #57371D;
+  color: #341f0d;
   font-weight: 600;
   font-size: 1rem;
   border: none;
@@ -2341,7 +2341,7 @@ section {
 /* 버튼 열렸을 때 */
 .accordion-button:not(.collapsed) {
   background-color: #E3AB5D;
-  color: #57371D;
+  color: #341f0d;
 }
 
 /* 화살표 아이콘 색상 */
@@ -2352,7 +2352,7 @@ section {
 /* 본문 (답변) */
 .accordion-body {
   background-color: #F9F5ED;
-  color: #57371D;
+  color: #341f0d;
   padding: 1rem 1.25rem;
   font-size: 0.95rem;
   line-height: 1.6;
